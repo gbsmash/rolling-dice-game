@@ -1,0 +1,33 @@
+@media screen and (max-width:1200px) {
+    .game--dice-wrapper{
+        grid-template-columns: repeat(2, minmax(5rem, 1fr));
+    }
+}
+
+
+@media screen and (max-width:490px) {
+    .game--dice-piece{
+        width: 9rem;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .game--dice-piece{
+        width: 8rem;
+        height: 110px;
+        padding: 1.2rem 1.2rem;
+    }
+
+    .game--game-wrapper{
+        h3{
+            font-size: 1.2rem;
+        }
+    }
+}
+
+
+@media screen and (max-width:359px) {
+    .game--dice-wrapper{
+        grid-template-columns: minmax(5rem, 1fr);
+    }
+}
