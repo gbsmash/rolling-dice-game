@@ -1,3 +1,5 @@
+$primary: #8ab8ec;
+
 @font-face {
     font-family: "Karla";
     src: url("./assets/Karla-Bold.ttf");
@@ -5,14 +7,15 @@
 
 
 .app-wrapper{
-    background-color: #5f7894;
+    background-color: $primary;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 1rem;
 }
 
 .body{
-    background-color: #5f7894;
+    background-color: $primary;
     min-height: 100vh;
 }
 
@@ -21,6 +24,7 @@
     padding:3rem;
     width: 70%;
     background-color: #F5F5F5;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -40,7 +44,7 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:3rem;
+    gap:2rem;
 
     h3{
         font-family: "Karla";
@@ -52,7 +56,7 @@ h3{
     }
 
     .game--game-button{
-        background-color: #5f7894;
+        background-color: $primary;
         padding: 1rem 3rem;
         border-radius: 5px;
         color: #FFF;
@@ -60,7 +64,7 @@ h3{
         font-family: 'Karla';
         font-size: 1.5rem;
         font-weight: 700;
-        box-shadow: 3px 7px 20px 0px rgba(0, 0, 0, 0.568);
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
         transition: 0.2s;
 
         &:active{

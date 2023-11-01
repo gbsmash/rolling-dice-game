@@ -10,8 +10,6 @@ function Game() {
     const [timer, setTimer] = useState(0);
     const [gameTime, setGameTime] = useState({hours:0,minutes:0,seconds:0});
 
-
-
     function initializeDice(){
         const numbers = [];
         for(var i=0; i<10; i++){
@@ -97,7 +95,7 @@ function Game() {
   return (
     <div className='game--game-wrapper'>
         <h3>Number of Rolls - {numberOfRolls}</h3>
-        <h3>Game Time - <span>
+        <h3>Time - <span>
             {` ${gameTime.hours < 10 ? '0' + gameTime.hours : gameTime.hours}
             : ${gameTime.minutes < 10 ? '0' + gameTime.minutes : gameTime.minutes}
             : ${gameTime.seconds < 10 ? '0' + gameTime.seconds : gameTime.seconds}`}
